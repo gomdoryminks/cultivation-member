@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>주요 채소류 재배 면적 신고</title>
+		<meta name="description" content="주요 채소류 재배 면적 신고">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<!-- Chrome, Firefox, Opera -->
+        <meta name="theme-color" content="#FFFFFF">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#FFFFFF">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<link href="../src/styles/css/font.css" type="text/css" rel="stylesheet">
+		<link href="../src/styles/css/style.css" type="text/css" rel="stylesheet">
+
+		<script src="../src/scripts/script.js"></script>
+	</head>
+
+	<body>
+		<!-- 신고자 정보 입력(정보입력) -->
+		<div class="wrap">
+			<!-- header -->
+			<header class="header">
+				<!-- hLeft : 헤더 왼쪽 영역 -->
+				<div class="hLeft">
+					<button type="button" class="bBack" onclick="history.back();">
+						<span>뒤로가기</span>
+					</button>
+					<!-- bHome : 기존회원일 경우에만 노출함 -->
+					<button type="button" class="bHome" onclick="location.href='reportList1-1.html';">
+						<span>홈으로 가기</span>
+					</button>
+				</div>
+				<!-- hTit : 헤더 제목 -->
+				<div class="hTit pl20">신고자 정보 입력</div>
+				<!-- hRight : 헤더 오른쪽 영역 -->
+				<div class="hRight">
+					<!-- bMenu : 기존회원일 경우에만 노출함 -->
+					<button type="button" class="bMenu" onclick="location.href='indexMenu.html';">
+						<span>메뉴보기</span>
+					</button>
+				</div>
+			</header>
+
+			<!-- content -->
+			<div class="cWrap">
+				<!-- cPage : 기본 페이지 -->
+				<section class="cPage">
+					<!-- pageConArea : 페이지 내용 영역 -->
+					<div class="pageConArea">
+						<!-- pageFormList : 페이지 입력 폼 영역 -->
+						<ul class="pageFormList">
+							<!-- pfTopArea : 입력 폼 상단 영역 -->
+							<li class="pfTopArea">
+								<div class="pfTopRight">
+									<div class="pfTopTxt">
+										<img src="../src/assets/images/icon-star-0r.svg" alt="필수항목 표시" class="cRequiredImg" />표시는 필수 입력
+									</div>
+								</div>
+							</li>
+
+							<!-- 20240108 Update Start -->
+							<!-- pfUnderline : 입력 폼이 언더라인일 경우 추가 -->
+							<li class="pfUnderline">
+								<div class="pageFormTit">
+									<label for="name">성명</label>
+								</div>
+								<div class="pageFromCon">
+									<!-- cFieldBox : 텍스트 필드 영역 -->
+									<div class="cFieldBox">
+										<!-- cFieldBoxInput : 텍스트 입력창 -->
+										<input type="text" id="name" class="cFieldBoxInput" value="홍길동" readonly />
+									</div>
+								</div>
+							</li>
+							<!-- pfUnderline : 입력 폼이 언더라인일 경우 추가 -->
+							<li class="pfUnderline">
+								<div class="pageFormTit">
+									<label for="birth">생년월일</label>
+								</div>
+								<div class="pageFromCon">
+									<!-- cFieldBox : 텍스트 필드 영역 -->
+									<div class="cFieldBox">
+										<!-- cFieldBoxInput : 텍스트 입력창 -->
+										<input type="text" id="birth" class="cFieldBoxInput" value="1960.02.03" readonly />
+									</div>
+								</div>
+							</li>
+							<!-- pfUnderline : 입력 폼이 언더라인일 경우 추가 -->
+							<li class="pfUnderline">
+								<div class="pageFormTit">
+									<label for="phoneNumber">휴대폰 번호</label>
+								</div>
+								<div class="pageFromCon">
+									<!-- cFieldBox : 텍스트 필드 영역 -->
+									<div class="cFieldBox">
+										<!-- cFieldBoxInput : 텍스트 입력창 -->
+										<input type="text" id="phoneNumber" class="cFieldBoxInput" value="010-3111-1234" readonly />
+									</div>
+								</div>
+							</li>
+							<!-- pfUnderline : 입력 폼이 언더라인일 경우 추가 -->
+							<li>
+								<div class="pageFormTit">
+									<label for="homeNumber">자택 번호</label>
+								</div>
+								<div class="pageFromCon">
+									<input type="text" id="homeNumber" placeholder="- 없이 숫자만 입력하세요" />
+								</div>
+							</li>
+							<!-- pfUnderline : 입력 폼이 언더라인일 경우 추가 -->
+							<li>
+								<div class="pageFormTit">
+									<label for="address">
+										<!-- cRequired : 필수항목일 경우 추가 -->
+										<span class="cRequired">주소</span>
+									</label>
+								</div>
+								<div class="pageFromCon">
+									<!-- cSearchBox : 텍스트 검색창 -->
+									<div class="cSearchBox">
+										<!-- cSearchBoxInput : 텍스트 입력창으로 placeholder 값 필수 -->
+										<input type="text" id="address" class="cSearchBoxInput" placeholder="주소를 검색하세요" />
+										<!-- cSearchBoxBtn : 텍스트 삭제 버튼 -->
+										<button type="button" class="cSearchBoxBtn" onclick="">
+											<span>텍스트 삭제 버튼</span>
+										</button>
+										<!-- cSearchBoxIcon : 텍스트 검색창 아이콘 -->
+										<span class="cSearchBoxIcon" onclick=""></span>
+									</div>
+								</div>
+							</li>
+							<!-- pfUnderline : 입력 폼이 언더라인일 경우 추가 -->
+							<li>
+								<div class="pageFormTit">
+									<label for="businessNumber">사업자 번호</label>
+								</div>
+								<div class="pageFromCon">
+									<input type="text" id="businessNumber" placeholder="- 없이 숫자만 입력하세요" />
+								</div>
+							</li>
+							<!-- 20240108 Update End -->
+						</ul>
+					</div>
+
+					<!-- pageBottomArea : 페이지 하단 영역 -->
+					<div class="pageBottomArea">
+						<div class="cFlex">
+							<button type="button" class="bLineType03" onclick="history.back();">
+								<span>취소</span>
+							</button>
+							<button type="button" class="bNext" onclick="location.href='memberStep3-1.html';">
+								<span>다음</span>
+							</button>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

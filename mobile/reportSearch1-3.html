@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>주요 채소류 재배 면적 신고</title>
+		<meta name="description" content="주요 채소류 재배 면적 신고">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<!-- Chrome, Firefox, Opera -->
+        <meta name="theme-color" content="#FFFFFF">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#FFFFFF">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<link href="../src/styles/css/font.css" type="text/css" rel="stylesheet">
+		<link href="../src/styles/css/style.css" type="text/css" rel="stylesheet">
+
+		<script src="../src/scripts/script.js"></script>
+	</head>
+
+	<body>
+		<!-- 재배 소재지 검색(선택 안했을 경우) -->
+		<div class="wrap">
+			<!-- header -->
+			<header class="header">
+				<!-- hLeft : 헤더 왼쪽 영역 -->
+				<div class="hLeft">
+					<button type="button" class="bBack" onclick="history.back();">
+						<span>뒤로가기</span>
+					</button>
+					<button type="button" class="bHome" onclick="location.href='reportList1-1.html';">
+						<span>홈으로 가기</span>
+					</button>
+				</div>
+				<!-- hTit : 헤더 제목 -->
+				<div class="hTit pl20">재배 소재지 검색</div>
+				<!-- hRight : 헤더 오른쪽 영역 -->
+				<div class="hRight">
+					<button type="button" class="bMenu" onclick="location.href='indexMenu.html';">
+						<span>메뉴보기</span>
+					</button>
+				</div>
+			</header>
+
+			<!-- content -->
+			<div class="cWrap">
+				<!-- cPage : 기본 페이지 -->
+				<section class="cPage">
+					<!-- pageConArea : 페이지 내용 영역 -->
+					<div class="pageConArea">
+						<!-- pageSearchArea : 페이지 검색조건 영역 -->
+						<div class="pageSearchArea">
+							<div class="pageSearchTxt">주소를 검색하거나 지도에서 재배지를 선택해 주세요.</div>
+							<div class="cFlex">
+								<label for="searchAddress" class="not-view">시/군/구 주소검색</label>
+								<select id="searchAddress">
+									<option value="서귀포시">서귀포시</option>
+								</select>
+
+								<label for="searchAddress2" class="not-view">읍/면/동 주소검색</label>
+								<select id="searchAddress2">
+									<option value="대정읍">대정읍</option>
+								</select>
+							</div>
+							<div class="cFlex">
+								<label for="searchAddress3" class="not-view">상세 주소검색</label>
+								<!-- cSearchBox : 텍스트 검색창 -->
+								<div class="cSearchBox">
+									<!-- cSearchBoxInput : 텍스트 입력창으로 placeholder 값 필수 -->
+									<input type="text" id="searchAddress3" class="cSearchBoxInput" value="서귀포시 대정읍 하모리 34" placeholder="재배 소재지를 검색하세요" />
+									<!-- cSearchBoxBtn : 텍스트 삭제 버튼 -->
+									<button type="button" class="cSearchBoxBtn" onclick="">
+										<span>텍스트 삭제 버튼</span>
+									</button>
+									<!-- cSearchBoxIcon : 텍스트 검색창 아이콘 -->
+									<span class="cSearchBoxIcon" onclick=""></span>
+								</div>
+							</div>
+						</div>
+
+						<!-- pageMapArea : 페이지 지도가 노출되는 영역, pageMapBackground02 : 지도 배경 예시 이미지 -->
+						<div class="pageMapArea pageMapBackground02" onclick="location.href='reportSearch1-2.html';"></div>
+
+						<!-- pageNotifyArea : 페이지 알림 영역 -->
+						<div class="pageNotifyArea">
+							<div class="pageNotifyError">재배지가 선택되지 않았습니다.<br /><span>지도 위의 재배지를 선택해 주세요.</span></div>
+						</div>
+					</div>
+
+					<!-- pageBottomArea : 페이지 하단 영역 -->
+					<div class="pageBottomArea">
+						<div class="cFlex">
+							<button type="button" class="bLineType03" onclick="history.back();">
+								<span>취소</span>
+							</button>
+
+							<!-- 20231218_2 Update Start -->
+							<button type="button" disabled onclick="">
+								<span>확인</span>
+							</button>
+							<!-- 20231218_2 Update End -->
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

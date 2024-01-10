@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>주요 채소류 재배 면적 신고</title>
+		<meta name="description" content="주요 채소류 재배 면적 신고">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<!-- Chrome, Firefox, Opera -->
+        <meta name="theme-color" content="#FFFFFF">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#FFFFFF">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<link href="../src/styles/css/font.css" type="text/css" rel="stylesheet">
+		<link href="../src/styles/css/style.css" type="text/css" rel="stylesheet">
+
+		<script src="../src/scripts/script.js"></script>
+	</head>
+
+	<body>
+		<!-- 신고자 정보 입력(약관동의) -->
+		<div class="wrap">
+			<!-- header -->
+			<header class="header">
+				<!-- hLeft : 헤더 왼쪽 영역 -->
+				<div class="hLeft">
+					<button type="button" class="bBack" onclick="history.back();">
+						<span>뒤로가기</span>
+					</button>
+					<!-- bHome : 기존회원일 경우에만 노출함 -->
+					<button type="button" class="bHome" onclick="location.href='reportList1-1.html';">
+						<span>홈으로 가기</span>
+					</button>
+				</div>
+				<!-- hTit : 헤더 제목 -->
+				<div class="hTit pl20">신고자 정보 입력</div>
+				<!-- hRight : 헤더 오른쪽 영역 -->
+				<div class="hRight">
+					<!-- bMenu : 기존회원일 경우에만 노출함 -->
+					<button type="button" class="bMenu" onclick="location.href='indexMenu.html';">
+						<span>메뉴보기</span>
+					</button>
+				</div>
+			</header>
+
+			<!-- content -->
+			<div class="cWrap">
+				<!-- cPage : 기본 페이지 -->
+				<section class="cPage">
+					<!-- pageConArea : 페이지 내용 영역 -->
+					<div class="pageConArea">
+						<!-- pageAgreeArea : 페이지 약관동의 영역 -->
+						<div class="pageAgreeArea">
+							<div class="pageAgreeTit"><span>개인정보 활용</span>에<br />동의해주세요</div>
+							<div class="pageAgreeCon">
+								<div class="pageAgreeCheckAll">
+									<div class="cCheckbox">
+										<input type="checkbox" id="checkboxItemAll" />
+										<label for="checkboxItemAll">전체동의</label>
+									</div>
+								</div>
+								<div class="pageAgreeTxt">주요 채소류 재배면적을 신고하며, 재배면적 신고와 관련하여 해당기관이 본인의 개 인정보를 처리하는 것에 동의합니다.</div>
+								<div class="pageAgreeCheck">
+									<div class="cCheckbox">
+										<input type="checkbox" id="checkboxItem00" checked />
+										<label for="checkboxItem00"><span>(필수)</span> 재배면적 산출과 관련 성명, 생년월일, 주소, 연락처의 개인정보의 수집·이용 동의</label>
+									</div>
+									<div class="cCheckbox">
+										<input type="checkbox" id="checkboxItem01" />
+										<label for="checkboxItem01"><span>(필수)</span> 재배면적 산출과 관련 성명, 생년월일, 주소,연락처의 개인정보의 제공 동의</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- pageBottomArea : 페이지 하단 영역 -->
+					<div class="pageBottomArea">
+						<div class="cFlex">
+							<button type="button" class="bLineType03" onclick="history.back();">
+								<span>취소</span>
+							</button>
+							<button type="button" class="bNext" onclick="location.href='memberStep2-2.html';">
+								<span>다음</span>
+							</button>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
